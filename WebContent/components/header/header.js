@@ -4,4 +4,4 @@ myApp.directive('header', function () {
 		restrict : 'E'
 	};
 });
-console.log(myApp.directive);
+console.log('header');
