@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8" />
+	<title>入口页面</title>
+</head>
+<body>
+	<header></header>
+	<div style="height:500px;text-align:center;line-height:500px;">这是content</div>
+	<footer></footer>
+</body>
+<script type="text/javascript" src="views/lib/angular.js"></script>
+<script type="text/javascript" src="views/lib/require.js"></script>
+<script type="text/javascript">
+	var myApp = angular.module('myApp', []);
+	
+	require(["components/header/header"]);
+</script>
+</html>

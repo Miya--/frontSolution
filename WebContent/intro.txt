@@ -1,0 +1,3 @@
+project
+	- components  存放项目模块资源
+	- views		     存放页面，非模块化资源
