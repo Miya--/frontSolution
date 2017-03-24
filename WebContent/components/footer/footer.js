@@ -1,6 +1,8 @@
-myApp.directive('footer', function () {
-	return {
-		templateUrl : 'footer/footer.html',
-		restrict : 'E'
-	};
+define(['angular', 'router'], function (angular, app) {
+	app.directive('footer', function () {
+		return {
+			templateUrl : '../components/footer/footer.html',
+			restrict : 'E'
+		};
+	});
 });
