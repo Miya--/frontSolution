@@ -4,7 +4,7 @@
  */
 (function () {
 	var config = {
-		baseUrl : '../views',
+		baseUrl : 'rely',
 		paths : {
 			angular : 'lib/angular',
 			'angular-route' : 'lib/angular-route'

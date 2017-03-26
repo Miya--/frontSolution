@@ -7,12 +7,12 @@ define(['angular', 'require', 'angular-route'], function (angular, require) {
 	
 	app.config(['$routeProvider', '$controllerProvider', function ($routeProvider, $controllerProvider) {
 		$routeProvider.when('/order', {
-             templateUrl: '../components/order/order.html',
+             templateUrl: 'components/order/order.html',
              controller: 'orderController',
              resolve: { // 路由更改html之前需要处理的事情
                  keyName: function ($q) {
                  	var deferred = $q.defer();
-                 	require(['../components/order/order.js'], function (controller) {
+                 	require(['components/order/order.js'], function (controller) {
                     	//由于是动态加载的controller，所以要先注册，再使用
                          $controllerProvider.register('orderController', controller); 
                          deferred.resolve();
